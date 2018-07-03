@@ -1,0 +1,58 @@
+* {
+  font: normal normal normal 20px/1.4em helveticaneuew01-45ligh,sans-serif;
+  color: rgba(32,48,60,1);
+  font-family: Calibri;
+}
+
+.btn_main {
+  background-color: #0d5da7; /* Green #0d5da7*/
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  border-style: none;
+}
+
+#hours {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+  #hours td, #hours th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #hours tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  #hours tr:hover {
+    background-color: #ddd;
+  }
+
+  #hours th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkgray;/*#4CAF50*/
+    color: white;
+  }
+
+.btn:hover {
+  background-color: #ddd;
+}
+.btn {
+  border-color: darkgray;
+  color: darkgray;
+}
+
+

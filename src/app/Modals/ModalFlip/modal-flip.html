@@ -1,0 +1,43 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Hour Counter</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+
+
+        <label>{{this.alert}}</label>
+        <!--<div class="input-group">
+    <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" (click)="dp.toggle()" type="button">
+        <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;" />
+      </button>
+    </div>
+  </div>-->
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Close</button>
+  </div>
+</ng-template>
+
+
+
+<div>
+
+  <!--<input type="button" (click)="addRemoveSimbols()" [(ngModel)]="addRemoveSymbol"  class="input1 btn_main" />-->
+  <div>
+    <input type="button" (click)="openFlip(content)" [(ngModel)]="flipValue" class="input1 btn_main" />
+    <!--<input type="button" class="btn_main" (click)="open(content)" [(ngModel)]="addRemoveSymbol" />-->
+  </div>
+</div>
+
+
+<!--<hr>-->
+<!--<pre>{{closeResult}}</pre>-->

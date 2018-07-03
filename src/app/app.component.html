@@ -1,0 +1,18 @@
+<header class="header">
+
+  <img src="/assets/images/logo.jpg" class="img" />
+</header>
+<!--<app-login></app-login>
+<div class="topnav">
+  <a *ngIf="loginService.showOperator()" routerLink="/operator" routerLinkActive="active-link">Operator</a>
+  <a *ngIf="loginService.showMaintenance()" routerLink="/maintenance" routerLinkActive="active-link">Maintenance</a>
+  <a *ngIf="loginService.showDevloper()" routerLink="/development" routerLinkActive="active-link">Development</a>
+</div>-->
+
+<div class="topnav">
+  <a  routerLink="/operator" routerLinkActive="active-link">Operator</a>
+  <a  routerLink="/maintenance" routerLinkActive="active-link">Maintenance</a>
+  <a  routerLink="/development" routerLinkActive="active-link">Development</a>
+</div>
+<router-outlet class="routerlink"></router-outlet>
+

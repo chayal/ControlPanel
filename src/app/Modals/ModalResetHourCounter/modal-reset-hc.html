@@ -1,0 +1,60 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Hour Counter</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <table style="width:100%" id="hours">
+          <tr>
+            <th>Component</th>
+            <th>Hour Counter</th>
+            <th>Reset</th>
+          </tr>
+          <tr>
+            <td>Electronics Cards</td>
+            <td>150:20:30</td>
+            <td ><input type="button" value="X"/></td>
+          </tr>
+          <tr>
+            <td>VIS Camera</td>
+            <td>270:53:52</td>
+            <td><input type="button" value="X" /></td>
+          </tr>
+          <tr>
+            <td>SWIR Camera</td>
+            <td>89:10:20</td>
+            <td><input type="button" value="X" /></td>
+          </tr>
+        </table>
+
+        <!--<label for="dateOfBirth">Hour Counter</label>
+  <div class="input-group">
+    <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" (click)="dp.toggle()" type="button">
+        <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;" />
+      </button>
+    </div>
+  </div>-->
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Close</button>
+  </div>
+</ng-template>
+
+
+
+<div>
+  
+  <input type="button" class="btn_main" (click)="open(content)" value="Hour Counter" />
+</div>
+
+
+<!--<hr>-->
+<!--<pre>{{closeResult}}</pre>-->

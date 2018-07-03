@@ -1,0 +1,116 @@
+<div>
+
+  <div class="column">
+    <div>
+      <!--<input type="button" (click)="addRemoveSimbols()" [(ngModel)]="addRemoveSymbol" class="input1" />-->
+
+      <ngbd-modal-Symbolic></ngbd-modal-Symbolic>
+      <!--<input type="button" value="BIT" />-->
+    </div>
+
+    <div>
+      <!--<input type="button" (click)="open(content)" value="Centralization" class="input1" />-->
+      <ngbd-modal-centralization></ngbd-modal-centralization>
+    </div>
+ 
+
+    <div>
+      <!--<input type="button" (click)="open(content)" value="Flip horizontal" class="input1" />-->
+      <ngbd-modal-flip></ngbd-modal-flip>
+    </div>
+    <div>
+      <!--<input type="button" (click)="open(content)" value="Reset hours counter" class="input1" />-->
+      <ngbd-modal-reset-hc></ngbd-modal-reset-hc>
+    </div>
+    <div>
+      <!--<input type="button" (click)="open(content)" value="Flash\Update Software" class="input1" />-->
+      <ngbd-modal-flash-software></ngbd-modal-flash-software>
+    </div>
+    
+    <input type="button" (click)="open(content)" value="BYPASS to SWIR" class="input1" />
+
+  </div>
+
+  <div class="column">
+    <div class="pp">
+      <div>
+        <span>
+          <label>Insert SN:</label>
+          <input class="inp" />
+          <input type="button" value="Save" />
+        </span>
+      </div>
+      <div>
+        <span>
+          <label>Insert PN:</label>
+          <input class="inp" />
+          <input type="button" value="save" />
+        </span>
+      </div>
+    </div>
+    <div class="pp">
+      <div>
+        <span>
+          <label>Periodic BIT frequency(sec)</label>
+          <input class="inp" />
+
+        </span>
+      </div>
+      </div>
+      <div class="pp">
+        <span>
+          <label>Auto shut down after(min) - TANK</label>
+          <input class="inp" />
+
+        </span>
+        <div>
+          <span>
+            <label>Auto shut down after(min) - Battery</label>
+            <input class="inp" />
+
+          </span>
+        </div>
+      </div>
+      <div class="pp">
+        <label>Battery</label>
+        <!--<label>Temperature range will disconnect the battery: </label>
+      <nouislider [connect]="true" [min]="0" [max]="15"
+                  [(ngModel)]="someRange"></nouislider>-->
+        <div>
+          <span>
+            <label>MAX temp for battery charge(C)</label>
+            <input class="inp" />
+
+          </span>
+        </div>
+        <div>
+          <span>
+            <label>MIN temp for battery charge(C)</label>
+            <input class="inp" />
+
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column">
+      <label class="tooltip">
+        commands:
+        <span class="tooltiptext">commands sent to server</span>
+      </label>
+      <div class="command">
+        # run full bit <br />
+
+        # set camera swir<br />
+        # set brightness 5<br />
+        # fetch software version<br />
+        # fetch sn<br />
+        # save log in path: "c:\users\user_name\documents"<br />
+        #
+      </div>
+    </div>
+
+  </div>
+
+

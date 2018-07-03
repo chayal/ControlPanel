@@ -1,0 +1,202 @@
+
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  /*display: inline-block;*/
+  display: contents;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+
+/*#################################*/
+/* You can add global styles to this file, and also import other style files */
+@import "~nouislider/distribute/nouislider.min.css";
+
+body {
+  background-color: #C6D9F1;
+}
+
+p {
+  font-family: Lato;
+}
+
+
+
+
+
+
+body {
+  margin: 0;
+}
+
+/*Style the header
+.header {
+  background-color: white;
+  padding: 5.5%;
+  /*border-bottom-style: solid;
+}*/
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+/*.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}*/
+
+.img {
+  float: right;
+  margin: -6%;
+  width: 12%;
+  padding: 0.5rem;
+}
+
+.operator {
+  text-align: left;
+  margin: 2%
+}
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #0d5da7;
+}
+
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+    /* Links - change color on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  /*padding: 15px;*/
+  height: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+* {
+  font: normal normal normal 20px/1.4em helveticaneuew01-45ligh,sans-serif;
+  color: rgba(32,48,60,1);
+  font-family: Calibri;
+}
+
+label {
+  font-weight: bold;
+  font-family: Calibri;
+  color: #0d5da7;
+  padding: 8px;
+}
+
+.input1 {
+  background-color: #0d5da7; /* Green #0d5da7*/
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%
+}
+
+.command {
+  background-color: #f2f2f2;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  content: "";
+  background-repeat: repeat-y;
+}
+
+.pp {
+  text-align: center;
+  /*border: 4px dotted blue;*/
+  border-style: solid;
+  display: block;
+  padding: 1.5%;
+  color: #f2f2f2;
+}
+
+.dd {
+  text-align: left;
+}
+
+.checked {
+  color: #f2f2f2 !important;
+}

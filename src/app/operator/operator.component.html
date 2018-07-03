@@ -1,0 +1,84 @@
+<div>
+  <div class="column">
+    
+
+    <div class="operator">
+
+
+      <!--<detailed-item nname="bbb" nvalue="333"></detailed-item>-->
+      <div>
+        <label>Software version:</label>
+        <span>100.22</span>
+      </div>
+      <div>
+        <label>Hardware version:</label>
+        <span>100.22</span>
+      </div>
+      <div>
+        <label>SWIR version</label>
+        <span>100.22</span>
+      </div>
+      <div>
+        <label>Serial Number</label>
+        <span>100.22</span>
+      </div>
+      <div>
+        <label>Product Number</label>
+        <span>100.22</span>
+      </div>
+    </div>
+    <span class="pp">
+      <label>SWIR </label>
+      <ui-switch class="toggle"></ui-switch>
+      <label> VIS </label>
+    </span>
+
+
+    <div class="pp">
+      <label> Brightness: </label>
+      <nouislider [connect]="true" [min]="0" [max]="15"
+                  [(ngModel)]="someRange"></nouislider>
+    </div>
+  </div>
+  <div class="column">
+    <div>
+      <ngbd-modal-basic></ngbd-modal-basic>
+      
+      <!--<input type="button" (click)="open(content)" value="Hour Counter" />-->
+    </div>
+    <div>
+      <ngbd-modal-bit></ngbd-modal-bit>
+      <!--<input type="button" value="BIT" />-->
+    </div>
+    <div>
+      <!--<button value="LOG" routerLink="/logs" formtarget="_blank"></button>-->
+      
+      <a routerLink="/logs" target="_blank"><input type="button" value="LOG"> </a>
+
+    </div>
+    
+    <div>
+      <a href="javascript: w=window.open('http://yoursite.com/LinkToThePDF.pdf');
+         w.print(); w.close(); ">​​​​​​​​​​​​​​​​​print pdf</a>
+    </div>
+
+  </div>
+  <div class="column">
+
+    <label class="tooltip" >
+      commands:
+        <span class="tooltiptext">commands sent to server</span>
+    </label>
+    <div class="command">
+      # run full bit <br />
+
+      # set camera swir<br />
+      # set brightness 5<br />
+      # fetch software version<br />
+      # fetch sn<br />
+      # save log in path: "c:\users\user_name\documents"<br />
+      #
+    </div>
+
+  </div>
+</div>
